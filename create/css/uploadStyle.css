@@ -1,0 +1,29 @@
+/* Container */
+/*.container{
+   margin: 0 auto;
+   border: 0px solid black;
+   width: 50%;
+   height: 250px;
+   border-radius: 3px;
+   background-color: ghostwhite;
+   text-align: center;
+}*/
+/* Preview */
+.preview{
+   width: 60px;
+   height: 60px;
+   /*border: 1px solid black;*/
+   margin: 0 auto;
+   background: white;
+}
+
+.preview img{
+   display: none;
+}
+/* Button */
+.button{
+   border: 0px;
+   background-color: #428bca;
+   color: white;
+   padding: 5px 15px;
+}
