@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<!--<![endif]-->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<meta name="description" content="Bootstrap How to collapse the mobile (responsive) navbar once one of the links is clicked. No jQuery needed. Just use data-toggle=collapse on the appr" />-->
+    <link type="text/css" rel="stylesheet" href="dist/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="dist/css/bootstrap-theme.min.css">
+    <!--<link type="text/css" rel="stylesheet" href="stylesheet/nivo-slider.css">-->
+    <link type="text/css" rel="stylesheet" href="css/responsiveslides.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <!--<link rel="icon" href="images/19142313_1494059417283089_2064631961_n.jpg">-->
+    <script src="js/jquery.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <!--<script src="Javascript/jquery.nivo.slider.pack.js"></script>-->
+    <script src="js/responsiveslides.min.js"></script>
+    <script src="js/effects.js"></script>
+    <title>View Users Account | First Action Finance</title>
+    <style>
+        ul.pagination li a{
+            background-color:#333;
+        }
+    </style>
+</head>
+<body>
+<div class="container"><!--Holds the whole contents-->
+    <div class="row" id="navigation"><!--Menu-->
+        <nav class="navbar navbar-nav">
+            <div class="container">
+                <!--Logo-->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+                        <span class="icon-bar" id="bar1"></span>
+                        <span class="icon-bar" id="bar2"></span>
+                        <span class="icon-bar" id="bar3"></span>
+                    </button>
+                    <a href="https://donald3700.github.io/firstb/" class="navbar-brand" id="coy_name"><span style="font-family:Courier New, monospace; font-size:20px;">First Action Finance</span></a>
+                </div>
+                <!--End of Logo-->
+                <!--Menu items-->
+                <div class="collapse navbar-collapse" id="mainNavBar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="https://donald3700.github.io/firstb/">Dashboard</a></li>
+                        <li><a href="https://donald3700.github.io/firstb/create/">Create Account</a></li>
+                        <li><a href="https://donald3700.github.io/firstb/login/">Log Out</a></li>
+                        <!--<li><a href="services.html">Services</a></li>-->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div><!--END of navigation-->
+    <div class="row" style="margin-top: 60px; clear:both;">
+                        <h1 class="text-center">Registered Account Users</h1>
+        <div class="col-9 col-m-9">
+            <nav aria-label="page navigation">
+                <ul class="pagination">
+                    <li>
+                        <a href="view.php?page=0" aria-label="Previous">
+                            <span aria-hidden="true">&laquo; Previous</span>
+                        </a>
+                    </li>
+                                        <li>
+                        <a href="view.php?page=1">1</a>
+                    </li>
+                                        <li>
+                        <a href="view.php?page=2" aria-label="Next">
+                            <span aria-hidden="true">Next &raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="table-responsive" style="overflow-y:scroll; overflow-y: hidden;">
+                <table class="table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <!--<th>S/n</th>-->
+                            <th>Passport</th>
+                            <th>Account</th>
+                            <th>F.Name</th>
+                            <th>L.Name</th>
+                            <th>Password</th>
+                            <th>Fake TRs</th>
+                            <th>Edit</th>
+                            <th>View TRs</th>
+                        </tr>
+                    </thead>
+                                    <tbody>
+                        <tr>
+                            <!--<td><?//=$id;?></td>-->
+                            <td><img style="border-radius:50%" width="45px" height="45px" src="uploads/IMG-63b40a29cece16.84071343.png" /></td>
+                            <td>0132160468</td>
+                            <td>Richard</td>
+                            <td>Hash</td>
+                            <td>richardhash</td>
+                            <td><a href="FkTx.php?uniqueID=0132160468">Fake TRs</a></td>
+                            <td><a href="edit.php?uniqueID=0132160468">Edit</a></td>
+                            <td><a href="viewFake.php?uniqueID=0132160468">View TRs</a></td>
+                        </tr>
+                    </tbody>
+                                                    <tbody>
+                        <tr>
+                            <!--<td><?//=$id;?></td>-->
+                            <td><img style="border-radius:50%" width="45px" height="45px" src="uploads/IMG-64259233ccd229.35618675.jpeg" /></td>
+                            <td>7365189367</td>
+                            <td>Billy</td>
+                            <td>Graham</td>
+                            <td>billy123</td>
+                            <td><a href="FkTx.php?uniqueID=7365189367">Fake TRs</a></td>
+                            <td><a href="edit.php?uniqueID=7365189367">Edit</a></td>
+                            <td><a href="viewFake.php?uniqueID=7365189367">View TRs</a></td>
+                        </tr>
+                    </tbody>
+                                                    <tbody>
+                        <tr>
+                            <!--<td><?//=$id;?></td>-->
+                            <td><img style="border-radius:50%" width="45px" height="45px" src="uploads/IMG-6425b8e23ac4c1.57360212.jpeg" /></td>
+                            <td>2467891234</td>
+                            <td>ALEX</td>
+                            <td>LIU</td>
+                            <td>445589</td>
+                            <td><a href="FkTx.php?uniqueID=2467891234">Fake TRs</a></td>
+                            <td><a href="edit.php?uniqueID=2467891234">Edit</a></td>
+                            <td><a href="viewFake.php?uniqueID=2467891234">View TRs</a></td>
+                        </tr>
+                    </tbody>
+                                                </table>
+            </div>
+        </div>
+        <div class="col-3 col-m-3">
+            <h4 style="font-family:Comic Sans MS, Comic Sans, cursive; font-size:30px;" class="gz"><span style="color:#026fbf;">First Action</span> FINANCE</h4>
+            <hr>
+            <!--<p>Get In Touch</p>-->
+            <span class="glyphicon glyphicon-user"></span>  &nbsp;&nbsp;<a href="https://donald3700.github.io/firstb/create/">Create Account</a> <br>
+            <span class="glyphicon glyphicon-eye-open"></span>  &nbsp;&nbsp;<a href="https://donald3700.github.io/firstb/view/" style="font-weight:bold;">View Account</a> <br>
+            <span class="glyphicon glyphicon-open"></span>  &nbsp;&nbsp;<a href="https://donald3700.github.io/firstb/update/">Update Website Details</a> <br>
+            <span class="glyphicon glyphicon-plus-sign"></span>  &nbsp;&nbsp;<a href="https://donald3700.github.io/firstb/error/">Error Messsage</a> <br>
+            <span class="glyphicon glyphicon-log-out"></span>  &nbsp;&nbsp;<a href="https://donald3700.github.io/firstb/login/">Log Out</a>
+            <hr>
+            <img src="images/home.png" style="width: 250px;"/>
+        </div>
+    </div><br>
+    <hr>
+    <div class="row" id="footing">
+        <div class="col-12 col-m-12">FIRST ACTION FINANCE &copy; 2023 </div>
+    </div>
+</div><!--end of container tag-->
+</body>
+</html>
